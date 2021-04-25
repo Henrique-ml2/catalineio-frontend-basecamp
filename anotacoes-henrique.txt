@@ -140,3 +140,45 @@ Para inserir um vídeo é semelhante ao que utiliza-se para o áudio.
 <video controls>
     <source src="./files/video.mp4" type="video/mp4"/>
 </video>
+
+
+// --- Aula 5 --- // 
+
+-=LISTAS
+
+São usadas para listar items/recursos, sendo ordenadas e desordenadas
+
+
+-=LISTA DESORDENADA
+
+Tipo de lista que compõe os items por tópicos a partir de ícones
+
+<ul>
+    <li>
+        <a href="https://facebook.com"></a>
+    </li>
+    <li>
+        <a href="https://twitter.com"></a>
+    </li>
+    <li>
+        <a href="https://intagram.com"></a>
+    </li>
+</ul>
+
+
+-=LISTA ORDENADA
+
+Tipo de lista que compõe os items ordenados numericamente
+
+<ol>
+    <li>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+    </li>
+    <li>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+    </li>
+    <li>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+    </li>
+</ol>
+
