@@ -182,3 +182,74 @@ Tipo de lista que compõe os items ordenados numericamente
     </li>
 </ol>
 
+
+// --- Aula 6 --- //
+
+-=FORMULÁRIOS
+
+A tag utilizada para criar formulários é a <form></form>, não oferecendo elementos visuais no navegador pois precisamos especificar quais são os campos desse formulário; esses campos são inseridos pela tag sem fechamento <input> sempre precisando de um tipo, definido por meio do atributo "type".
+
+<form >
+    <input type="text">
+</form>
+
+
+Podemos definir um valor padrão para esse <input> por meio do atributo "value"
+
+<form >
+    <input type="text" value="123">
+</form>
+
+
+E também podemos reservar um texto no <input> sem atribuí-lo um valor em , usando o atributo "placeholder" - muitas vezes utilizado para guiar o usuário no formulário
+
+<form >
+    <input type="text" placeholder="Nome">
+</form>
+
+
+Agora vamos para açguns exemplos de formulário:
+
+Ex 1:
+
+<h3>Fomulário de login</h3>
+<form >
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Senha">
+    <button type="submit">Login</button>
+</form>
+- button type: faz uma ação de submeter o formulário com os valores inseridos
+
+
+Ex 2:
+
+<h4>Fomulário de contato simples</h4>
+<form >
+    <input type="text" placeholder="Nome" required> <br>
+    <input type="text" placeholder="Gênero" required> <br>
+    <input type="text" placeholder="Assunto" required> <br>
+    <textarea cols="30" rows="10" placeholder="Mensagem"></textarea required> <br>
+    <button type="submit">Enviar</button>
+</form>
+- textarea: área para desenvolver um texto/mensagem grande
+- required: campos que necessitam estar preenchidos para dar o submit (botão)
+
+
+Ex 3:
+
+<h4>Fomulário de contato complexo</h4>
+<form >
+    <input type="text" placeholder="Nome" required> <br>
+    <input name="genero" type="radio">Masculino<br>
+    <input name="genero" type="radio">Feminino<br>
+    <select>
+        <option>Sugestão</option>
+        <option>Reclamação</option>
+        <option>Suporte</option>
+    </select> <br>
+    <textarea cols="30" rows="10" placeholder="Mensagem"></textarea required> <br>
+    <input type="file"> <br>
+    <button type="submit">Enviar</button>
+</form>
+- type="radio": botão clicável 
+- name="genero": os dois <input> tem o mesmo valor, assim, os dois botões fazem parte da mesma família, onde apenas um podedrá ser selecionado
