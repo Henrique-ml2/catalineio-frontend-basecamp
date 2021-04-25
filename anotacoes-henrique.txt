@@ -94,3 +94,49 @@ Como agora o arquivo "home.html", também precisaremos apontar para ele, sendo e
 
 <a href="../home.html">Voltar para home</a>
 - .. : significa sair/voltar da pasta/diretório atual
+
+
+// --- Aula 4 --- // 
+
+-=IMAGEM E MULTIMÍDIA
+
+Conhecemos Multimídia como um conjunto de recursos dinâmicos e estáticos, sendo imagens, áudios, vídeos, etc.
+
+-=IMAGEM
+
+Para inserir uma imagem utiliza-se a tag <img/>, não precisando ser fechada por não apresentar conteúdo dentro de si. Tudo que diz respeito à tag <img> será nomeado por meio de atributos.
+
+<img src="./files/imagem.jpg">
+
+O HTML configura automaticamente a imagem para não ficar distorcida quando apenas um atributo de medida é declarado 
+
+<img src="./files/imagem.jpg" width="300px" height="300px"> // distorcido
+<img src="./files/imagem.jpg" width="300px"> // auto configurado
+
+Diferença entre os atributos "href" e "src"
+- href: especifica a localização de um recurso que está na web
+- src: incorpora um determinado recurso para dentro de nossa página
+
+Outro atributo indispensável é o "alt", atributo mais semântico que serve para especificar uma descrição alternativa para a imagem - tanto para quando ela não carregar, quanto para a acessibilidade à pessoas com deficiência
+
+<img src="./files/imagem.jpg" width="300px" alt="Cachorro">
+
+
+-=ÁUDIO
+
+Para inserir um áudio utiliza-se a tag <audio></audio> juntamente com a tag <source/> onde esta não precisa ser fechada; especificando as informações do áudio através de atributos na tag <source/>.
+
+<audio controls>
+    <source src="./files/audio.mp3" type="audio/mpeg"/>
+</audio>
+- controls: exibir os controles de reprodução do áudio
+- type: o tipo do áudio
+
+
+-=VÍDEO
+
+Para inserir um vídeo é semelhante ao que utiliza-se para o áudio.
+
+<video controls>
+    <source src="./files/video.mp4" type="video/mp4"/>
+</video>
