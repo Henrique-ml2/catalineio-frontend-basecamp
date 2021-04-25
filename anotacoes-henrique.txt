@@ -1,3 +1,5 @@
+// --- Aula 2 --- //
+
 -=TIPOGRAFIA
 
 Tipografia é todo processo que envolve a impressão dos tipos, sendo tipo de fonte ou letra.
@@ -58,3 +60,37 @@ Já que não iremos inserir quaisquer conteúdo dentro desta tag, ela não neces
 A tag <span> não nos oferece nenhum tipo de estilização por padrão ou peso semântico, o uso mais comum dela é quando queremos isolar uma parte especifica do texto para fazer alguma estilização adicional.
 
 <h1>Sua carreira de sucesso <span>começa aqui e agora!</span></h1>
+
+
+// --- Aula 3 --- //
+
+-=HIPERLINK E ATRIBUTOS
+
+A tag <a> serve para criar uam hiperligação para outro conteúdo.
+
+Porém deve conter o atributo "href" para referenciar um hipertexto, que especifica a localização de um recurso da web.
+
+<a href="https://google.com">ir para o site da Google</a>
+
+
+Uma tag pode ter mais de um atributo. Assim, utilizaremos o atributo "target", no qual significa o destino, onde o recurso (site, etc..) será aberto, para abrir em uma nova janela do navegador:
+
+<a href="https://google.com" target="_blank">ir para o site da Google em uma nova aba</a>
+
+
+Agora, vamos fazer o link apontar para a página de contato:
+
+<a href="contato.html">Ir para a página de contato</a>
+
+
+Como o arquivo "contato.html" está em uma outra diretório, precisamos apontar para ele dentro deste diretório:
+
+<a href="./sub-pasta/contato.html">Ir para a página de contato</a>
+- . : dizer que faremos uma navegação de diretório a partir do diretório atual
+- / : para especificar o próximo diretório
+
+
+Como agora o arquivo "home.html", também precisaremos apontar para ele, sendo em outro diretório, ou seja, no de fora:
+
+<a href="../home.html">Voltar para home</a>
+- .. : significa sair/voltar da pasta/diretório atual
