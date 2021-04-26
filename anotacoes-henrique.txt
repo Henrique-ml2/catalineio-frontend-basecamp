@@ -274,3 +274,35 @@ Também há outras como:
 - <section></section> // dividir conteúdos em seções
 - <nav></nav> // campo de navegação da página
 - <div></div> // tag genérica para isolar um conteúdo 
+
+
+// --- Aula 8 --- //
+
+-=META TAGS
+
+Meta tags são tags que inserimos em nosso documento HTML, mas que servirá exclusivamente para passar uma informação ao navegador, para então, ele possa processar nossa página como esperamos.
+
+Para inserir um título da nossa página no navegador, fazemos:
+
+<title>Título da página</title>
+
+
+Para inserir um ícone:
+
+<link rel="icon" href="./abacaxi.png">
+
+
+Para definir o tipo de codificação de nossa página (com o valor UTF-8) utiliza-se a tag <meta> a partir do atributo "charset", assim, o navegador poderá interpretar caracteres especiais, como ç / ? / ! / á, etc.
+
+<meta charset="UTF-8">
+
+
+Para otimizar a exibição do layout da página em dispositivos móveis:
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+- width=device-width: representa a largura exata de onde o conteúdo está sendo apresentado
+- initial-scale=1: controla o nível de amplificação quando a página é carregada pela primeira vez; e se o valor for 1, a página será renderizada mais próxima possível do tamanho físico do dispositivo
+
+
+ 
+
