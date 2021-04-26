@@ -253,3 +253,24 @@ Ex 3:
 </form>
 - type="radio": botão clicável 
 - name="genero": os dois <input> tem o mesmo valor, assim, os dois botões fazem parte da mesma família, onde apenas um podedrá ser selecionado
+
+// --- Aula 7 --- // 
+
+-=SEMÂNTICA
+
+No HTML existem algumas tags que servem exclusivamente para organizar nosso código e agregar semântica em nossa página.
+
+HTML semântico = HTML bem estruturado - ou seja, cada parte de nossa parte terá um significado específico, facilitando assim a indexação do nosso site nos buscadores e uma melhor posição no ranking de buscas.
+
+Tags principais para organização de nosso conteúdo:
+
+- <header></header> // cabeçalho
+- <main></main> // conteúdo principal
+- <footer></footer> // rodapé
+
+
+Também há outras como:
+
+- <section></section> // dividir conteúdos em seções
+- <nav></nav> // campo de navegação da página
+- <div></div> // tag genérica para isolar um conteúdo 
