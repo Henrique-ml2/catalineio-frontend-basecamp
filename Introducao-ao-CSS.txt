@@ -1,0 +1,15 @@
+
+        Introcução ao CSS
+
+// --- Aula 1 --- // 
+
+/ O que é CSS /
+
+CSS - Cascade Style Sheet
+
+Versão atual - CSS3
+
+É a W3C que desenvolve e mantém as especificações da linguagem.
+
+O objetivo do CSS é estilização da página, estilizando o HTML e deixando nosso site mais atrativo.
+
