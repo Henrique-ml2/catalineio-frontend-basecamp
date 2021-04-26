@@ -304,5 +304,22 @@ Para otimizar a exibição do layout da página em dispositivos móveis:
 - initial-scale=1: controla o nível de amplificação quando a página é carregada pela primeira vez; e se o valor for 1, a página será renderizada mais próxima possível do tamanho físico do dispositivo
 
 
- 
+// --- Aula 9 --- // 
 
+-=ESTRUTURA HTML5
+
+Como visto anteriormente existem tags (ao usuário) e meta tags (para o navegador).
+É interessante que separemos essas informações por meio de tags:
+
+- <head></head> // envolve as meta tags
+- <body></body> // envolve as tags
+
+
+Embora as tags <head> e <body> estarem no mesmo documento, nada explica que o <body> pertence ao <head>. E para deixar isso claro, os involvemos em uma tag <html></html>
+
+- <html></html> // envolve as tagas <head> e <body>
+
+
+Por útlimo, só falta deixar explícito qual a versão do HTML que estamos utilizando: 
+
+- <!DOCTYPE html> // navegador já sabe a que queremos utilizar a última versão do HTML
