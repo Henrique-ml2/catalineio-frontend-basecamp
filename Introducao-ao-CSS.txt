@@ -74,3 +74,69 @@ Ex B:
     background-color: #00f;
     background-color: #0000ff;
 
+
+// --- Hierarquias --- //
+
+O CSS funciona a base de hierarquias, uma cascata de regras que obedecem propriedades.
+
+Assim, o CSS leva em consideração o que foi declarado por último ou por níveis de hierarquia mesmo.
+
+Ex 1: 
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            background-color: blue; // a <div> será dessa cor
+        }
+
+Ex 2: 
+
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            background-color: blue;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div style="background-color: yellow;"></div> // a <div> será dessa cor
+    </body>
+
+Ex 3: 
+
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            background-color: blue !important; // a <div> será dessa cor
+        }
+    </style>
+    </head>
+
+    <body>
+        <div style="background-color: yellow;"></div>
+    </body>
+
+Ex 4: 
+
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            background-color: blue !important; 
+        }
+    </style>
+    </head>
+
+    <body>
+        <div style="background-color: yellow !important;"></div> // a <div> será dessa cor
+    </body>
+
+Há também a hierarquia por parte de classes e id, mas que não foi abordado nesta aula.
+
