@@ -22,7 +22,7 @@ Porém, deste modo, caso haja vários elementos <h1></h1>, temos dois problemas,
 1) Repetição: ter que inserir as cores em cada um dos elementos
 2) Trabalho braçal: caso um dia eu quiser mudar as cores desses elementos, terei que fazê-lo manualmente
 
-Então, para solucionar esse problema, utilizamos a tag <style></style> dentro de <head></head>, onde aplicaremos as estilizações CSS
+Então, para solucionar esse problema, utilizamos a tag <style></style> dentro de <head></head>, onde aplicaremos as estilizações CSS selecionando qual elemento iremos estilizar:
 
 <style>
     h1 {
@@ -31,3 +31,46 @@ Então, para solucionar esse problema, utilizamos a tag <style></style> dentro d
     }
 </style>
 - lembrando de sempre utilizar ";" caso haja mais de uma propriedade, se não o código dará errp
+
+
+// --- Cores --- //
+
+Cores padrões são um tanto quanto robóticas, engessadas, muito comuns e como já dito, padronizadas.
+
+Assim, iremos definir na unha a cor exata que queremos utilizar com os valores do rgb(x, x, x), onde temos 3 parâmetros em valores decimais:
+
+    background-color: rgb(0, 0, 255); // 0 = mínimo e 255 = máximo (potência da cor)
+
+
+Também temos o rgba(x, x, x, x), onde o 4° parâmetro significa a transparência da cor gerada pelos 3 primeiros parâmetros:
+
+    background-color: rgba(0, 0, 255, 50%); // porcentagem de transparência
+
+
+Mas, também podemos declarar as cores por meio da cerquilha (o jogo da velha) "#", as mais comumente utilizada na web, definida por valores hexadecimais:
+
+{   0 1 2 3 4 5 6 7 8 9 a b c d e f   }
+
+- 0 decimal = 0 hexadecimal        // 0% de uma cor
+- 255 decimal = f hexadecimal      // 100% de uma cor
+
+
+Podemos declarar as # de 2 formas:
+1) uma casa - representando um parâmetro
+2) duas casas - representando um parâmetro
+
+Ex R: 
+
+    background-color: #f00;
+    background-color: #ff0000;
+
+Ex G: 
+
+    background-color: #0f0;
+    background-color: #00ff00;
+
+Ex B: 
+
+    background-color: #00f;
+    background-color: #0000ff;
+
