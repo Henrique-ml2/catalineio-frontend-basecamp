@@ -79,7 +79,7 @@ Ex B:
 
 O CSS funciona a base de hierarquias, uma cascata de regras que obedecem propriedades.
 
-Assim, o CSS leva em consideração o que foi declarado por último ou por níveis de hierarquia mesmo.
+Assim, o CSS leva em consideração o que foi declarado por último ou por níveis de hierarquia.
 
 Ex 1: 
 
@@ -140,3 +140,35 @@ Ex 4:
 
 Há também a hierarquia por parte de classes e id, mas que não foi abordado nesta aula.
 
+
+// --- Fontes --- //
+
+Cada navegador tem um padrão de fonte onde é adotada caso uma outra fonte não seja definida.
+
+Existem Fontes e Tipos de fontes, não confunda!
+
+    h1 {
+        font-family: sans-serif;
+        font-style: italic;
+        font-size: 50px;
+        font-weight: 1000;
+    }
+- serifa: são os acabamentos da fonte, e com essa fonte nosso <h1> não terá esses acabamentos 
+- font-weight: o peso/grossura da fonte
+
+
+Também podemos inserir um fonte externa para o nosso projeto, baixando-a, incluindo o arquivo em nosso projeto, e a fonte em nosso documento HTML:
+
+    @font-face {
+        font-family: Roose-Sally;
+        src: url("./Roose-Sally.otf");
+    }
+- font-family: o nome que damos à essa fonte para ser utilizada
+- src: qual arquivo ela está
+
+
+Para não ter que declarar a fonte em cada elemento no <style>, declara-se diretamente na tag <body>, para, caso queira, todo o conteúdo da página ser estilizada por essa fonte.
+
+    body {
+        font-family: Roose-Sally;
+    }
