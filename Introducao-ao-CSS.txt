@@ -1,9 +1,7 @@
 
         Introcução ao CSS
 
-// --- Aula 1 --- // 
-
-/ O que é CSS /
+// --- O que é CSS --- // 
 
 CSS - Cascade Style Sheet
 
@@ -13,3 +11,23 @@ Versão atual - CSS3
 
 O objetivo do CSS é estilização da página, estilizando o HTML e deixando nosso site mais atrativo.
 
+
+// --- Primeiros passos --- // 
+
+Para colorir o texto em vermelho:
+
+<h1 style="color: red;">Hello World!</h1>
+
+Porém, deste modo, caso haja vários elementos <h1></h1>, temos dois problemas, 
+1) Repetição: ter que inserir as cores em cada um dos elementos
+2) Trabalho braçal: caso um dia eu quiser mudar as cores desses elementos, terei que fazê-lo manualmente
+
+Então, para solucionar esse problema, utilizamos a tag <style></style> dentro de <head></head>, onde aplicaremos as estilizações CSS
+
+<style>
+    h1 {
+         color: red;
+        font-size: 20px;
+    }
+</style>
+- lembrando de sempre utilizar ";" caso haja mais de uma propriedade, se não o código dará errp
