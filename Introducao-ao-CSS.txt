@@ -306,3 +306,14 @@ Padding:
     }
     
     
+// --- Sombras --- //
+
+Sombrear um elemento insere-se o seguinte atributo:
+
+    box-shadow: 0 0 0 black; // deslocamento horizontal - deslocamento vertical - desfoque - cor
+
+
+Para suavizar a sombra de sua cor opaca, orientamos a transparência da sombra com o atributo "rgba":
+
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5); // 50% de transparência
+
