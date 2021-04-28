@@ -172,3 +172,56 @@ Para não ter que declarar a fonte em cada elemento no <style>, declara-se diret
     body {
         font-family: Roose-Sally;
     }
+
+
+// --- Estilização de texto --- // 
+
+Além de estilização decorativa, temos também a estilização de formatação de texto.
+
+Ajustes:
+
+    p {
+        text-align: left;   // ajusta o texto à esquerda
+        text-align: right;  // ajusta o texto à direta
+        text-align: center; // ajusta o texto ao centro
+    }
+
+Modo:
+
+    p {
+        text-transform: lowercase;  // texto em caixa baixa
+        text-transform: uppercase;  // texto em caixa alta
+        text-transform: capitalize; // todas a letras começam em maiúsculo
+    }
+
+Sublinhado:
+
+    p {
+        text-decoration: underline;     // sublinhado embaixo
+        text-decoration: overline;      // sublinhado em cima
+        text-decoration: line-through;  // riscado
+    }
+
+
+E para espaçamentos entre o texto, temos alguns atributos.
+
+Influenciar o espaçamento de uma LINHA da outra:
+
+    p {
+        line-height: 30px;
+    }
+
+
+Influenciar o espaçamento de uma PALAVRA da outra:
+
+    p {
+        word-spacing: 20px;
+    }
+
+
+Influenciar o espaçamento de uma LETRA da outra:
+
+    p {
+        letter-spacing: 10px;
+    }
+
