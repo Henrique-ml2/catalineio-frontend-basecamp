@@ -264,3 +264,17 @@ Arredondar em todos os cantos:
   border-radius: 100px; // círculo
 
 
+// --- Console do navegador --- //
+
+Hoje em dia os navegadores costumam ter, em sua versão mais recente, uma ferramenta incrível, o Console do Navegador.
+
+Ctrl + Shift + I
+
+- Elements: estrutura HTML, estilização CSS, 
+- Console: saídas de JavaScript
+- Source: os arquivos da aplicação/página
+- Network: as requisições que a página realiza 
+- Performance: a performance 
+
+O Console pode ser muito útil também para realizar testes em tempo real, apenas modificando o código diretamente no navegador - na aba de "Elements"
+
