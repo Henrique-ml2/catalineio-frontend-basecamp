@@ -256,7 +256,7 @@ Arredondar - verboso:
 
 Arredondar - simples:
 
-  border-radius: 30px 30px 30px 30px; // sentido horário 
+  border-radius: 30px 30px 30px 30px; // top - rigth - botton - left
 
 
 Arredondar em todos os cantos:
@@ -278,3 +278,31 @@ Ctrl + Shift + I
 
 O Console pode ser muito útil também para realizar testes em tempo real, apenas modificando o código diretamente no navegador - na aba de "Elements"
 
+
+// --- Espaçamento --- //
+
+Nessa aula será abordado os espaçamento de um elemento.
+
+Espaçamento externo (margin): o que divide um elemento do outro
+Espaçamento interno (padding): o que divide o conteúdo de seu recipiente
+
+Margin:
+
+    div {
+        margin: 10px;                   // todos os lados
+        margin: 10px 20px;              // top botton - left right
+        margin: 10px 20px 30px;         // top - left right - botton
+        margin: 10px 20px 30px 40px;    // sentido horário
+    }
+
+
+Padding:
+
+    div {
+        padding: 10px;                   // todos os lados
+        padding: 10px 20px;              // top botton - left right
+        padding: 10px 20px 30px;         // top - left right - botton
+        padding: 10px 20px 30px 40px;    // sentido horário
+    }
+    
+    
