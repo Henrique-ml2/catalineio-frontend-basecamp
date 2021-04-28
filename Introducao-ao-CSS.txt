@@ -225,3 +225,42 @@ Influenciar o espaçamento de uma LETRA da outra:
         letter-spacing: 10px;
     }
 
+
+// --- Bordas --- //
+
+Temos algumas formas de criar uma borda em nosso elemento.
+
+Criar borda - verbosa:
+
+    border-width: 5px;
+    border-style: dashed;
+    border-color: turquoise;
+
+
+Criar borda - simples:
+
+    border: 5px dashed turquoise;
+
+
+/ Arredondamento / 
+
+Assim como inserção de bordas, podemos arredondá-las.
+
+Arredondar - verboso:
+
+    border-top-left-radius: 30px; 
+    border-top-right-radius: 30px; 
+    border-bottom-left-radius: 30px; 
+    border-bottom-right-radius: 30px; 
+
+
+Arredondar - simples:
+
+  border-radius: 30px 30px 30px 30px; // sentido horário 
+
+
+Arredondar em todos os cantos:
+
+  border-radius: 100px; // círculo
+
+

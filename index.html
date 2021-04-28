@@ -8,19 +8,34 @@
     <title>Introdução ao CSS</title>
 
     <style>
-        p {
-            text-align: left;
-            text-transform: capitalize;
-            text-decoration: line-through;
-            line-height: 30px;
-            word-spacing: 20px;
-            letter-spacing: 10px;
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+
+            /* borda - verbosa */
+            border-width: 5px;
+            border-style: dashed;
+            border-color: turquoise;
+            /* borda - simples */
+            border: 5px dashed turquoise;
+
+            /* arredondamento - verboso */
+            border-top-left-radius: 30px; 
+            border-top-right-radius: 30px; 
+            border-bottom-right-radius: 30px; 
+            border-bottom-left-radius: 30px; 
+            /* arredondamento - simples */
+            border-radius: 30px 60px 60px 30px;
+            /* arredondamento em todos os cantos */
+            border-radius: 100%;
         }
+        
     </style>
 </head>
 
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ea. Maiores dignissimos, nemo nobis eligendi in ad itaque? Reprehenderit quae officiis aperiam vitae itaque dicta ducimus magnam tempore dolores hic.</p>
+    <div></div>
 </body>
  
 </html>
