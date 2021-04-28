@@ -313,7 +313,7 @@ Sombrear um elemento insere-se o seguinte atributo:
     box-shadow: 0 0 0 black; // deslocamento horizontal - deslocamento vertical - desfoque - cor
 
 
-Para suavizar a sombra de sua cor opaca, orientamos a transparência da sombra com o atributo "rgba":
+Para suavizar a sombra de sua cor opaca, orientamos a transparência da sombra com a propriedade "rgba":
 
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.5); // 50% de transparência
 
@@ -349,5 +349,46 @@ Degrade:
         background-image: linear-gradient(45deg, tomato, yellowgreen, turquoise);
         background-repeat: no-repeat;
         height: 1000vh;
+    }
+
+
+// --- Tipos de exibição --- // 
+
+No CSS existe uma propriedade chamada "display", que serve para controlar a exibição de um elemento em tela.
+
+
+Existem alguns valores para esta propriedade:
+
+- inline:  Exibe um elemento como um elemento embutido, ou seja, exibe os elementos lado a lado, e quaisquer propriedades de altura e largura não terão efeitos.
+
+- block:  Exibe um elementos como um elemento de bloco, ou seja, um em cima do outro começando em     uma nova linha e ocupando toda a largura, e quaisquer propriedades de altura e largura são levadas em conta.
+
+- inline-block:  Exibe um elemento como um contêiner de bloco em nível de linha. O próprio elemento é formatado como elemento embutido.... ou seja, é uma junção das propriedades "inline" e "block", onde exibe os elementos lado a lado mas podendo adquirir propriedades de altura e largura.
+
+- none:  O elemento é completamente removido
+
+- flex:  Propriedades de posicionamento especias dedicados à 1 elemento
+
+- grid:  Propriedades de posicionamento especias dedicados à mais de 1 elemento
+
+
+Algumas tags já adquirem comportamentos, propriedades e display por padrão. 
+
+<h1> // já adquire o display: block;
+<span> // já adquire o display: inline;
+etc...
+
+E para bloquear estes comportamentos padrões, basta declarar o display oposto deste.
+
+Ex: 
+
+    h1 {
+        background-color: violet;
+        display: inline;
+    }
+
+    span {
+        background-color: blueviolet;
+        display: block;
     }
 
