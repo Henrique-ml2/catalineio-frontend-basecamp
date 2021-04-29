@@ -8,48 +8,44 @@
     <title>Introdução ao CSS</title>
 
     <style>
-        h1 {
-            background-color: violet;
-            display: inline;
-            width: 100px;
-            height: 200px;
+        body {
+            height: 500vh;
         }
 
-        span {
-            background-color: blueviolet;
-            display: block;
-            width: 100px;
+        .box-1 {
+            width: 200px;
             height: 200px;
+            background-color: greenyellow;
+            position: relative;
         }
 
-        p {
-            background-color: darkviolet;
-            display: inline-block;
-            width: 100px;
-            height: 200px;
+        .box-2 {
+            width: 30px;
+            height: 30px;
+            background-color: tomato;
+            position: absolute;
+            right: 0;
+            bottom: 0;
         }
 
-        h2 {
-            background-color: mediumvioletred;
-            display: none;
-            width: 100px;
+        .box-3 {
+            width: 200px;
             height: 200px;
+            border-radius: 80%;
+            background-color: turquoise;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
         }
     </style>
 </head>
 
 <body>
-    <h1>HTML</h1>
-    <h1>CSS</h1>
-
-    <span>HTML</span>
-    <span>CSS</span>
-
-    <p>HTML</p>
-    <p>CSS</p>
-
-    <h2>HTML</h2>
-    <h2>CSS</h2>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero necessitatibus, voluptates hic rerum perspiciatis tenetur nihil, totam non, quasi dicta veniam in odio! Dolor assumenda excepturi tenetur soluta suscipit magnam.</h1>
+    <div class="box-1">
+        <div class="box-2"></div>
+    </div>
+    <div class="box-3"></div>
 </body>
 
 </html>

@@ -392,3 +392,14 @@ Ex:
         display: block;
     }
 
+
+// --- Posicionamentos --- // 
+
+Para posicionarmos um elemento sem mudá-lo de posição em nosso documento, devemos de adicionar a propriedade "position" e atribuir um valor:
+
+- relative: posiciona um elemento com base em sua posição original
+
+- absolute: faz com o que o elemento se posicione respetiando o elemento pai com a "position: relative;"
+
+- fixed: o elemento fica fixado/estático na página
+
