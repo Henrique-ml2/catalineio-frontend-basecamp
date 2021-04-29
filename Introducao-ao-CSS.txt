@@ -436,3 +436,52 @@ Para aplicar esse efeito faz-se:
         font-weight: lighter;
     }
 
+
+// --- Transições --- // 
+
+Para suavizar o efeito imediato do efeito Hover, utilizaremos as transições.
+
+As transições têm 4 parâmetros:
+
+- transition-property: quais propriedades serão alteradas
+
+- transition-duration: a velocidade em que o elemento se transforma
+
+- transition-timing-function: o tipo de transição
+
+- transition-delay: o tempo para que a transformação acontece assim que ficar com o mouse em cima
+
+
+Transição - verbosa:
+
+    div {
+            width: 200px;
+            height: 200px;
+            border-radius: 10%;
+            background-color: cornflowerblue;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: linear;
+            transition-delay: 0.2s;
+        }
+
+        div:hover {
+            border-radius: 100%;
+            background-color: tomato;
+        }
+
+Transição - simples:
+
+    div {
+        width: 200px;
+        height: 200px;
+        border-radius: 10%;
+        background-color: tomato;
+        transition: all 0.5s linear 0.2s;
+    }
+
+    div:hover {
+        border-radius: 100%;
+        background-color: yellowgreen;
+    }
+
