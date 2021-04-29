@@ -420,3 +420,19 @@ Teoricamente, todos os elementos do HTML tem "z-index: 1", então para sobrepor 
     }
 - como o elemento <h1> por padrão tem o "z-index: 1", basta definir um valor anterior a este
 
+
+// --- Efeito Hover --- //
+
+O efeito Hover é um argumento de seleção ":hover", sendo um efeito que modificará o elemento quando o mouse passar por cima dele.
+
+Para aplicar esse efeito faz-se:
+
+    h1 {
+        font-size: 40px;
+        color: coral;
+    }
+
+    h1:hover {
+        font-weight: lighter;
+    }
+
