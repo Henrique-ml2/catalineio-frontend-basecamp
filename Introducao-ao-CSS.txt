@@ -527,3 +527,86 @@ Ex:
     <h1>Hello World!</h1>
 </body>
 
+
+// --- Mais seletores --- //
+
+Existem algumas outras formas de selecionar um elemento para estilizá-lo.
+
+/ Argumentos /
+
+Ex :
+
+    div {
+        width: 50px;
+        height: 50px;
+        background-color: rebeccapurple;
+        margin: 10px;
+    }
+
+    div:first-of-type {
+        ...
+    }
+- irá aplicar a estilização para a primera <div> do documento
+
+
+    div:last-of-type {
+        ...
+    }
+- irá aplicar a estilização para a útlima <div> do documento
+
+
+    div:nth-child(6){
+        ...
+    }
+- entre parênteses, especifica a posição da <div> que será estilizada
+
+
+/ Id /
+
+Deve ser usado como identicador ÚNICO, ou seja, não deve ser usado por mais nenhum outro elemento.
+Nomenclatura: não pode começar com 1) letra maiúscula - 2) número - 3) conter espaços
+
+Ex:
+
+    <style>
+        div {
+            width: 50px;
+            height: 50px;
+            background-color: rebeccapurple;
+        }
+        
+        #amarelo {
+            background-color: yellow;
+        }
+    </style>
+    ...
+    <body>
+        <div id="amarelo"></div>    
+    </body>
+
+
+/ Classe / 
+
+Essa sim é recomendada a ser utilizada por vários elementos, e segue as mesmas regras de nomenclatura do Id.
+
+Ex: 
+
+    <style>
+        .degrade-turquoise-tomato{
+            background: linear-gradient(turquoise, tomato);
+        }
+
+        .bordado {
+            border: 2px solid black;
+        }
+
+        .circulo {
+            border-radius: 100%;
+        }
+    </style>
+    ...
+    <body>
+        <div class="degrade-turquoise-tomato bordado"></div>    
+        <div class="degrade-turquoise-tomato circulo"></div>    
+    </body>
+
