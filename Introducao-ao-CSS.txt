@@ -610,3 +610,16 @@ Ex:
         <div class="degrade-turquoise-tomato circulo"></div>    
     </body>
 
+
+// --- Isolamento de estilo --- //
+
+O melhor lugar para se colocar a estilização CSS é em outro arquivo, evitando:
+1) bagunça no documento 
+2) repetições desnecessárias
+
+Assim, isolando o CSS e importando ele para cada arquivo HTML que desejarmos.
+
+Para importar o documento CSS, o fazemos por meio do elemento <link/> assim fazendo desuso da elemento <style></style>:
+
+    <link rel="stylesheet" href="./style.css">
+
